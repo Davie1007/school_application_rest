@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity;
 public class StudentController {
 
     public ResponseEntity<Student> registerStudent(){
-        return
+        return null;
     }
 
 }

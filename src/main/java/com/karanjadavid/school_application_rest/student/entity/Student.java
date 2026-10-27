@@ -3,6 +3,8 @@ package com.karanjadavid.school_application_rest.student.entity;
 
 import com.karanjadavid.school_application_rest.lib.entity.Person;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,6 +15,9 @@ import java.util.List;
 @Setter
 @Entity
 public class Student extends Person {
+
+    @Enumerated(EnumType.STRING)
+    private StudentStatus studentStatus;
 
     private List<Person> parents = new ArrayList<>();
 
